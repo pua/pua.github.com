@@ -1,0 +1,17 @@
+markdown:         rdiscount
+pygments:         true
+paginate:         8
+
+title:            ImPUA's Blog
+url:              http://impua.info
+feed:             atom.xml
+author:
+    name:         ImPUA
+    email:        ImPUA@gmail.com
+    twitter:      twitter.com/impua
+description:      "ImPUA's blog. Science of Seduction"
+
+copyright:
+    - Design by <a href="http://impua.info" rel="friend" title="ImPUA" target="_blank">ImPUA</a> Powered by <a href="http://github.com/mojombo/jekyll/" rel="friend" title="Jekyll" target="_blank">Jekyll</a>
+    - "&copy; Copyright 2012, All Rights Reserved."
+

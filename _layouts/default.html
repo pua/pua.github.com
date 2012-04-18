@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+	  **
+    *
+    * Author:         ImPUA
+    * Contact:        impua@gmail.com
+    * Theme:          Pick up Artist
+    **
+  -->
+  <meta charset="utf-8" />
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="generator" content="Jekyll" />
+  <meta name="author" content="{{ site.author.name }}" />
+  <meta name="description" content="{{ site.description }}" />
+  <link rel="stylesheet" href="/css/default.css" type="text/css" />
+  <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
+
+  <LINK rel=icon type="image/x-icon" href="/favicon.ico">
+  <LINK rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  
+	<!--[if lt IE 9]>
+	<script src="/js/html5.js" type="text/javascript"></script>
+	<![endif]--> 
+	
+  <script src="/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script> 
+  
+  	<!--[if lt IE 8]>
+	<style type="text/css">
+	#head,#menuIndex,#archIndex{position:absolute}
+	#rss{display:none}
+	#head{margin-bottom:30px}
+	#contenter{padding-top:40px}
+	</style>
+	
+	 <script type="text/javascript">
+	 $(document).ready(function(){
+	   $('#navigator').append('<li><a href="/{{ site.feed }}" rel="feed" target="_blank" title="订阅博客">订阅博客</a></li>')
+	   });
+	 </script> 
+	
+	<![endif]-->
+  
+</head>
+<body>
+  <header id="head">  
+    <section id="header">
+      <nav class="nav">
+		<ul id="navigator">
+        <li><a href="/" title="Home" rel="nofollow">主页</a></li>
+        <li><a href="/archives.html" rel="bookmark" title="Archives" {% if page.title == "文章列表" %}class="current"{% endif %}>文章列表</a></li>
+		<li><a href="/routines.html" rel="bookmark" title="Archives" {% if page.title == "惯例集" %}class="current"{% endif %}>惯例集</a></li>
+        <li><a href="/SimpleLog.html" rel="bookmark" title="SimpleLog" {% if page.title == "流水账" %}class="current"{% endif %}>流水账</a></li>
+ 		</ul>
+      </nav><!-- .nav -->
+	  <div id="rss"><a href="/{{ site.feed }}" rel="feed" target="_blank" title="订阅博客"><img src="/images/rss.png" alt="订阅博客" align="top"/>订阅</a></div>
+    </section><!-- #header -->	
+  </header><!-- #head -->
+  
+  <section id="content">
+  
+  <div id="ToTop"></div>
+  
+    <article id="contenter" {% if page.index == true %}class="index"{% endif %}>
+      {{ content }}
+    </article><!-- #contenter -->
+	
+   <footer id="foot">
+    <section id="footer">
+      <div class="my-link">
+        <a href="http://paoxue.com/space-uid-238223.html" target="_blank" title="泡学网" rel="nofollow">联系我</a>
+      </div>
+
+      <div class="copyright">
+        {% for line in site.copyright %}
+            <p>{{ line }}</p>
+        {% endfor %}
+      </div>
+    </section><!-- #footer -->
+  </footer><!-- #foot -->
+	               
+  </section><!-- #content -->
+ 
+
+  
+
+
+ <script type="text/javascript"> 
+	 (function() {
+    var $backToTopTxt = "返回顶部", $backToTopEle = $('<div class="backToTop"></div>').appendTo($("#ToTop"))
+        .text($backToTopTxt).attr("title", $backToTopTxt).click(function() {
+            $("html, body").animate({ scrollTop: 0 }, 120);
+    }), $backToTopFun = function() {
+        var st = $(document).scrollTop(), winh = $(window).height();
+        (st > 0)? $backToTopEle.show(): $backToTopEle.hide();    
+        //IE6下的定位
+        if (!window.XMLHttpRequest) {
+            $backToTopEle.css("top", st + winh - 166);    
+        }
+    };
+    $(window).bind("scroll", $backToTopFun);
+    $(function() { $backToTopFun(); });
+})();
+ </script>
+
+ <script type="text/javascript">    
+	$(document).ready(function(){             
+
+            $('.entry a').each(function(index,element){
+                var href = $(this).attr('href');
+                if(href.indexOf('#') == 0){
+                }else if ( href.indexOf('/') == 0 || href.toLowerCase().indexOf('impua.info')>-1 ){
+                }else{
+                    $(this).attr('target','_blank');
+                    $(this).addClass('external');
+                }
+            });
+           
+        });	
+</script>
+
+
+
+{% if page.title == "文章列表" %}
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript"> 
+	  google.load('search', '1', {language : 'zh-CN', style : google.loader.themes.SHINY});
+	  google.setOnLoadCallback(function() {
+		var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+		  '013327025781380964119:wo3o5kd3gro', customSearchOptions);
+		customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+		customSearchControl.draw('cse');
+	  }, true);
+	</script>
+{% endif %}
+
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript">var jiathis_config = {data_track_clickback:true,marginTop:600};</script>
+<script type="text/javascript" src="http://v2.jiathis.com/code/jiathis_r.js?type=left&amp;move=0&amp;btn=l2.gif&amp;uid=1558027" charset="utf-8"></script>
+
+<!-- 调整JiaThis Button的样式 -->
+<script type="text/javascript"> 
+	var ckepopcss = {
+      top: '',
+      bottom: '10px'
+};
+	$("#ckepop").css(ckepopcss);
+</script>
+<!-- JiaThis Button END -->
+
+
+</body>
+</html>

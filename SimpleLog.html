@@ -1,0 +1,60 @@
+---
+layout: page
+title: 流水账
+---
+<article id="post-list" class="change-log">
+  <h3>{{ page.title }}</h3>
+<h4>这里简单记录我的生活轨迹</h4>
+
+<div id="featured-post"></div>
+<div style="text-align:center"><button id="show-more-button">更多...</button></div>
+<div id="more-post"></div>
+
+</article>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $.ajax({
+		//请求方式为get
+		type:"GET",
+		//json文件位置
+		url:"log.json",
+		//返回数据格式为json
+		dataType: "json",
+		//请求成功完成后要执行的方法
+		success: function(data){
+			//使用$.each方法遍历返回的数据date,插入到id为#result中
+			var content = "";
+			$.each(data,function(i,item){		
+				content += "<p><span class='date'>"+item.date+": </span>"+item.diary+"</p>";
+				if(i==4){return false;}
+			});
+		
+			$("#featured-post").append(content);
+
+		}, // 注意这里是逗号
+
+		error: function(){
+			alert("error");
+		}
+	});
+	
+
+	$("button").click(function(){
+		$.getJSON("log.json",function(data){
+			var content2="";
+			$.each(data,function(i,item){
+				if(i>4){
+				content2 += "<p><span class='date'>"+item.date+": </span>"+item.diary+"</p>";
+				}
+			});
+			$("#more-post").append(content2);
+		});
+		
+		$("#show-more-button").attr('style','display:none');
+
+	});	
+});
+</script>
+
+
