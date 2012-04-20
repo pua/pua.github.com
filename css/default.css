@@ -791,7 +791,8 @@ a:hover {
 #menuIndex a {display:block;text-align:left;color:#00EE00}
 #menuIndex a:hover {text-decoration:none;color:white}
 #menuIndex ul li{font-size:12px;margin-bottom:5px;word-wrap:break-word;}
-#menuIndex ul li.on{background-color:transparent;color:white;}
+#menuIndex ul li.on{background-color:transparent;font-size:1.5em;font-weight:700}
+#menuIndex ul li.on a{color:white}
 #menuIndex li.h1{font-size:14px;font-weight:normal;}
 #menuIndex li.h1 a{color:#EEEE00;font-weight:400}
 #menuIndex li.h1 a:hover{color:white;font-weight:400}
