@@ -6,7 +6,9 @@ title: 流水账
   <h3>{{ page.title }}</h3>
 <h4>这里简单记录我的生活轨迹</h4>
 
-<div id="featured-post"></div>
+<div id="featured-post">
+	<p class="loading" style="text-align:center">加载中...</p>
+</div>
 <div style="text-align:center"><button id="show-more-button">更多...</button></div>
 <div id="more-post"></div>
 
@@ -29,7 +31,8 @@ $(document).ready(function() {
 				content += "<p><span class='date'>"+item.date+": </span>"+item.diary+"</p>";
 				if(i==4){return false;}
 			});
-		
+			
+			$('#featured-post .loading').remove();
 			$("#featured-post").append(content);
 
 		}, // 注意这里是逗号
