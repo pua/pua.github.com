@@ -9,7 +9,7 @@ title: 流水账
 <div id="featured-post">
 	<p class="loading" style="text-align:center">加载中...</p>
 </div>
-<div style="text-align:center"><button id="show-more-button">更多...</button></div>
+<div style="text-align:center"><button id="show-more-button" style="display:none">更多...</button></div>
 <div id="more-post"></div>
 
 </article>
@@ -34,6 +34,7 @@ $(document).ready(function() {
 			
 			$('#featured-post .loading').remove();
 			$("#featured-post").append(content);
+			$('#show-more-button').removeAttr("style");
 
 		}, // 注意这里是逗号
 
