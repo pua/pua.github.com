@@ -926,3 +926,12 @@ button::-moz-focus-inner {
 	margin-left:auto;
 	margin-right:auto
 }
+
+.loading{
+	text-align:center;
+}
+
+.loading img{
+	vertical-align:middle;
+	margin:5px;
+}
