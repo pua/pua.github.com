@@ -55,7 +55,7 @@ links:
 	<table id="blogroll">
 	{% for link in page.links %}
 	<tr>
-	<td><a href="{{ link.url }}" title="{{ link.name }}" target="_blank">{{ link.name }}</td><td><span>{{ link.disp }}</span></td><td>{% if link.weibo %}<a href="{{ link.weibo}}" target="_blank">微博</a>{% endif %}</td>
+	<td><a href="{{ link.url }}" title="{{ link.name }}" target="_blank">{{ link.name }}</a></td><td><span>{{ link.disp }}</span></td><td>{% if link.weibo %}<a href="{{ link.weibo}}" target="_blank">微博</a>{% endif %}</td>
 	</tr>
 	{% endfor %}
 	</table>
