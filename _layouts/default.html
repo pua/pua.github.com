@@ -49,10 +49,11 @@
       <nav class="nav">
 		<ul id="navigator">
         <li><a href="/" title="Home" rel="nofollow">主页</a></li>
-        <li><a href="/archives.html" rel="bookmark" title="Archives" {% if page.title == "文章列表" %}class="current"{% endif %}>文章列表</a></li>
-		<li><a href="/routines.html" rel="bookmark" title="Archives" {% if page.title == "惯例集" %}class="current"{% endif %}>惯例集</a></li>
-        <li><a href="/SimpleLog.html" rel="bookmark" title="SimpleLog" {% if page.title == "流水账" %}class="current"{% endif %}>流水账</a></li>
- 		</ul>
+        <li><a href="/archives.html" rel="bookmark" title="文章列表" {% if page.title == "文章列表" %}class="current"{% endif %}>文章列表</a></li>
+		<li><a href="/routines.html" rel="bookmark" title="惯例集" {% if page.title == "惯例集" %}class="current"{% endif %}>惯例集</a></li>
+        <li><a href="/SimpleLog.html" rel="bookmark" title="流水帐" {% if page.title == "流水账" %}class="current"{% endif %}>流水账</a></li>
+		 <li><a href="/links.html" rel="bookmark" title="友情链接" {% if page.title == "友情链接" %}class="current"{% endif %}>友情链接</a></li> 		
+	</ul>
       </nav><!-- .nav -->
 	  <div id="rss"><a href="/{{ site.feed }}" rel="feed" target="_blank" title="订阅博客"><img src="/images/rss.png" alt="订阅博客" align="top"/>订阅</a></div>
     </section><!-- #header -->	
@@ -135,6 +136,7 @@
 	</script>
 {% endif %}
 
+{% comment %}
 <!-- JiaThis Button BEGIN -->
 <script type="text/javascript">var jiathis_config = {data_track_clickback:true,marginTop:600};</script>
 <script type="text/javascript" src="http://v2.jiathis.com/code/jiathis_r.js?type=left&amp;move=0&amp;btn=l2.gif&amp;uid=1558027" charset="utf-8"></script>
@@ -148,7 +150,7 @@
 	$("#ckepop").css(ckepopcss);
 </script>
 <!-- JiaThis Button END -->
-
+{% endcomment %}
 
 </body>
 </html>

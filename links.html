@@ -1,0 +1,67 @@
+---
+layout:           default
+title:            友情链接
+links: 
+    - name: 泡学网
+      url: http://paoxue.com
+      disp: 泡学理论与实践交流平台
+      weibo: 
+
+    - name: 辛巴
+      url: http://wantian225.diandian.com/
+      disp: 相亲流高手
+      weibo: http://weibo.com/wantian
+
+    - name: 蓝色答案
+      url: http://blog.sina.com.cn/answer3244158
+      disp: 夜店高手
+      weibo: http://weibo.com/answerpua
+
+    - name: 墨菲斯
+      url: http://blog.sina.com.cn/mofeisi01
+      disp: 情感社交力学，心性吸引
+      weibo: http://weibo.com/mpua
+
+    - name: 冷爱
+      url: http://blog.sina.com.cn/u/1586261253
+      disp: 情感专家、前泡泡恋爱学社区CEO
+      weibo: http://weibo.com/coldloving
+
+    - name: BBK
+      url: http://blog.sina.com.cn/u/2036193164
+      disp: 泡学最前沿的视野，翻译高手
+      weibo: http://weibo.com/u/2036193164
+
+    - name: 成真
+      url: http://blog.sina.com.cn/mishangwo
+      disp: 《迷上我》的作者
+      weibo: http://weibo.com/mishangwo
+
+    - name: 泳湿小狗
+      url: http://blog.sina.com.cn/17date
+      disp: 专注于约会、恋爱、社交，以及相关心理指导
+      weibo: http://weibo.com/17date
+
+    - name: 七烟
+      url: http://blog.sina.com.cn/smokedate
+      disp: 约会艺术与真我魅力
+      weibo: http://weibo.com/smokedate
+---
+
+  
+<article id="post-list">
+ 
+  <h3>{{ page.title }}</h3>
+	<table id="blogroll">
+	{% for link in page.links %}
+	<tr>
+	<td><a href="{{ link.url }}" title="{{ link.name }}" target="_blank">{{ link.name }}</td><td><span>{{ link.disp }}</span></td><td>{% if link.weibo %}<a href="{{ link.weibo}}" target="_blank">微博</a>{% endif %}</td>
+	</tr>
+	{% endfor %}
+	</table>
+
+</article>
+
+
+
+
