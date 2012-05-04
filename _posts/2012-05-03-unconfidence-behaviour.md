@@ -1,7 +1,7 @@
 ---
 layout:   post
 title: 十三种不自信的行为
-routine: true
+routine: false
 ---
 本文节选自成真的《迷上我》。
 
