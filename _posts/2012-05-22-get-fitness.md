@@ -65,3 +65,5 @@ location:
 11.消除臀部下垂的赘肉和紧实腿部肌肉2 
  
 ![](/images/fitness/11.gif)
+
+另外还有个[视频教程](http://www.tudou.com/programs/view/GiMryRoT_T0/?resourceId=0_06_02_99?fr=2)
