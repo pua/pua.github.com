@@ -5,6 +5,7 @@ layout: default
 <h1>{{ page.title }}</h1>
 <p style="color:red;">{{ page.date | date_to_string}} {% if page.location %} @{{ page.location}} {% endif %}</p>
   {{ content }}
+ {% if page.routine == true %} <p style="font-size:14px;text-align:right"><a href="/routines.html">➥回到惯例集列表</a></p>{% endif %}
   <nav id="pagination">
     {% if page.previous %}
       <a class="prev" href="{{ page.previous.url }}" rel="prev" title="前一篇：{{page.previous.title}}">&laquo;&nbsp;{{ page.previous.title | truncatewords:5 }}</a>
