@@ -4,7 +4,7 @@ title:    搭讪之后蓝色答案现场指导后续短信互动
 routine: false
 ---
 
-<font face="楷体,楷体_GB2312"><font size="4"><font color="Black">&nbsp; &nbsp;Hi，大家好，我是Allen，是蓝色答案线下课程的学员，刚刚结束三天两夜的培训，虽然现在还是个PUB（Pick Up Beginner，泡学菜鸟），但我和另外两名学员——大鲍、</font></font></font><font face="楷体,楷体_GB2312"><font size="4"><font color="#444444"><font><font face="Tahoma"><font style="font-size:14px">Kurt</font></font></font></font></font></font><font face="楷体,楷体_GB2312"><font size="4"><font color="Black">一样，都感觉很有收获。<br>
+<font face="楷体,楷体_GB2312"><font size="4"><font color="Black">&nbsp; &nbsp;Hi，大家好，我是Allen，是蓝色答案线下课程的学员，刚刚结束三天两夜的培训，虽然现在还是个PUB（Pick Up Beginner，泡学菜鸟），但我和另外两名学员——大鲍、</font></font></font><font face="楷体,楷体_GB2312"><font size="4"><font color="#444444"><font><font face="Tahoma"><font style="font-size:14px">Mango</font></font></font></font></font></font><font face="楷体,楷体_GB2312"><font size="4"><font color="Black">一样，都感觉很有收获。<br>
 <br>
 &nbsp; &nbsp;我说说昨天在三里屯Village搭讪的情况吧。当时答案看到一个身材高挑穿着长裙戴着墨镜的mm，让我去搭，我开始找借口，说她太高了气场很足的样子，还戴个墨镜，看不清脸。。。答案一直鼓励我，我就硬着头皮跟过去了。跟得还挺远，穿过Village的喷泉广场，她向人烟稀少的小巷子走去，中间我又几次想退却，真的，放弃只是一念之间的事。当时我看到路边还有俩PUB摸样的人，望着她的背影，不敢上去搭，好吧，那我还是要继续，继续跟，看她走向那个楼外的电梯，我又犹豫了一下，都已经转身要走了，又转回来走向那个MM，能不能走向目标，有时真的是一念之间。这时电梯正好开了，我和她一起进了电梯，我开始讲开场白</font><br>
 </font></font><font size="4"><br>
@@ -45,7 +45,7 @@ routine: false
 </font><font size="4"><font color="Blue">我：行，那下次再约吧</font></font><font size="4"><br>
 &nbsp; &nbsp;&nbsp;&nbsp;</font><font face="楷体,楷体_GB2312"><font size="4">刚刚答案在群里说，下次再约，她会有补偿心理 出来的可能会更大</font></font><font size="4"><br>
 <br>
-更多内容在蓝色答案的微博&nbsp;&nbsp;以及 我的博客<br>
+更多内容在蓝色答案的<a href="http://weibo.com/answerpua">微博</a>&nbsp;&nbsp;以及<a href="/">我的博客</a><br>
 欢迎加入北京pickup群&nbsp;&nbsp;123657731&nbsp;&nbsp;我们共同进步<br>
 <br>
 </font>
