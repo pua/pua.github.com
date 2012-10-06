@@ -24,7 +24,9 @@
 	<script src="/js/html5.js" type="text/javascript"></script>
 	<![endif]--> 
 	
-  <script src="/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script> 
+  <script src="/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+
   
   	<!--[if lt IE 8]>
 	<style type="text/css">
@@ -49,7 +51,7 @@
       <nav class="nav">
 		<ul id="navigator">
         <li><a href="/" title="Home" rel="nofollow">主页</a></li>
-        <li><a href="/archives.html" rel="bookmark" title="文章列表" {% if page.title == "文章列表" %}class="current"{% endif %}>文章列表</a></li>
+        <li><a href="/archives" rel="bookmark" title="文章列表" {% if page.title == "文章列表" %}class="current"{% endif %}>文章列表</a></li>
 		<li><a href="/routines.html" rel="bookmark" title="惯例集" {% if page.title == "惯例集" %}class="current"{% endif %}>惯例集</a></li>
         <li><a href="/SimpleLog.html" rel="bookmark" title="流水帐" {% if page.title == "流水账" %}class="current"{% endif %}>流水账</a></li>
 		 <li><a href="/links.html" rel="bookmark" title="友情链接" {% if page.title == "友情链接" %}class="current"{% endif %}>友情链接</a></li> 		
@@ -124,6 +126,28 @@
 
 
 {% if page.title == "文章列表" %}
+<script src="/js/jquery.infinitescroll.min.js" type="text/javascript" charset="utf-8"></script>  
+<script type="text/javascript" charset="utf-8">  
+  // Infinite Scroll jQuery+Wordpress plugin
+  $('#post-list').infinitescroll({
+    debug           : false,
+    nextSelector    : "div.navigation .alignleft a",
+    navSelector     : "div.navigation",
+    contentSelector : "#post-list",
+    itemSelector    : "#post-list ul.posts"
+    }, function(){
+		var tempStr="";
+		$('h2.listing-seperator-year').each(function(){
+			var thisStr = $(this).text();
+			if (tempStr != thisStr ) 
+				tempStr = thisStr;
+			else 
+				$(this).remove(); 
+		})
+	
+})
+</script>
+
 	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 	<script type="text/javascript"> 
 	  google.load('search', '1', {language : 'zh-CN', style : google.loader.themes.SHINY});
@@ -133,11 +157,10 @@
 		customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
 		customSearchControl.draw('cse');
 	  }, true);
-	</script>
+	</script> 
 {% endif %}
 
-{% comment %}
-<!-- JiaThis Button BEGIN -->
+{% comment %}<!-- JiaThis Button BEGIN -->
 <script type="text/javascript">var jiathis_config = {data_track_clickback:true,marginTop:600};</script>
 <script type="text/javascript" src="http://v2.jiathis.com/code/jiathis_r.js?type=left&amp;move=0&amp;btn=l2.gif&amp;uid=1558027" charset="utf-8"></script>
 
@@ -149,8 +172,6 @@
 };
 	$("#ckepop").css(ckepopcss);
 </script>
-<!-- JiaThis Button END -->
-{% endcomment %}
-
+<!-- JiaThis Button END -->{% endcomment %}
 </body>
 </html>

@@ -16,7 +16,7 @@ index:     true
 <article id="post-list" class="index">
 	<div id="post-list-title">
 		<h3>博文列表</h3>
-		<div id="more-list"><a href="/archives.html">全部文章...</a></div>
+		<div id="more-list"><a href="/archives">全部文章...</a></div>
 	</div>
     <ul class="posts">
         {% for post in paginator.posts  %}
@@ -31,7 +31,7 @@ index:     true
    {% if paginator.page == 2 %}
    <a href="/" rel="prev" title="按左方向键←或J键进入前一页"> << 前一页</a>
    {% else %}
-   <a href="/page{{ paginator.previous_page }}" rel="prev" title="按左方向键←或J键进入前一页"> << 前一页</a>
+   <a href="/page{{ paginator.previous_page }}" rel="prev" class="prev" title="按左方向键←或J键进入前一页"> << 前一页</a>
    {% endif %}
   {% endif %}
   {% if paginator.next_page %}

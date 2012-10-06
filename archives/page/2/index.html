@@ -1,0 +1,24 @@
+---
+layout:           default
+title:            文章列表
+perScreen:        40
+---
+
+  
+<article id="post-list">
+ 
+     
+  		<ul class="posts">{% for post in site.posts offset:page.perScreen limit:60 %}{% capture y %}{{post.date | date:"%Y"}}{% endcapture %}{% if year != y %}{% assign year = y %}
+		<h2 class="listing-seperator-year">{{ y }}年</h2>{% endif %}
+		  <li class="listing-item"><span>{{ post.date | date:"%Y-%m-%d" }}</span><a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>{% endfor %}
+		</ul>
+
+<div class="navigation">
+	<div class="alignleft"><a href="/archives/page/3/"></a></div>
+	<div class="alignright"></div>
+</div>		
+		
+	
+</article>
+
+

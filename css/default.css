@@ -350,7 +350,7 @@ a:hover {
 
 #post-list-title{border-bottom: 1px solid #e9e9e9}
 
-#post-list.index ul.posts{min-height:215px} 
+#post-list.index ul.posts{height:230px} 
 
 #post-list li {
   margin: 0.8em 0;
@@ -397,6 +397,7 @@ a:hover {
 #pagination {
   margin: 15px auto 10px auto;
   width: 90%;
+ /* height: 35px;*/
   padding: 5px 10px;
   font-family: Monaco, "Courier New", monospace;
   border-top: 1px solid #EBEBEB;
@@ -946,3 +947,5 @@ button::-moz-focus-inner {
 	vertical-align:middle;
 	margin:5px;
 }
+
+

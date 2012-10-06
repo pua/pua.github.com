@@ -1,0 +1,18 @@
+---
+layout:           default
+title:            文章列表
+---
+
+  
+<article id="post-list">
+ 
+     
+  		<ul class="posts">{% for post in site.posts offset:100 %}{% capture y %}{{post.date | date:"%Y"}}{% endcapture %}{% if year != y %}{% assign year = y %}
+		<h2 class="listing-seperator-year">{{ y }}年</h2>{% endif %}
+		<li class="listing-item"><span>{{ post.date | date:"%Y-%m-%d" }}</span><a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>{% endfor %}
+		</ul>		
+		
+	
+</article>
+
+
