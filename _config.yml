@@ -2,7 +2,7 @@ markdown:         rdiscount
 pygments:         true
 paginate:         8
 
-title:            ImPUA's Blog
+title:            PUA成长日记
 url:              http://impua.info
 feed:             atom.xml
 author:
