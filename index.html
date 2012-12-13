@@ -11,11 +11,10 @@ index:     true
 	<p>要做火焰，不要做飞蛾！</p>
 	<p style="text-align:right;font-style:italic">——卡萨诺瓦</p>
 	</div>
-
-
+	
 <article id="post-list" class="index">
 	<div id="post-list-title">
-		<h3>博文列表</h3>
+		<h3>文章列表</h3>
 		<div id="more-list"><a href="/archives">全部文章...</a></div>
 	</div>
     <ul class="posts">
@@ -25,23 +24,11 @@ index:     true
     </ul>
    
    <nav id="pagination">
-   <div class="paginator-list">
-  {% if paginator.previous_page %}
-
-   {% if paginator.page == 2 %}
-   <a href="/" rel="prev" title="按左方向键←或J键进入前一页"> << 前一页</a>
-   {% else %}
-   <a href="/page{{ paginator.previous_page }}" rel="prev" class="prev" title="按左方向键←或J键进入前一页"> << 前一页</a>
-   {% endif %}
-  {% endif %}
-  {% if paginator.next_page %}
-  
-   <a href="/page{{ paginator.next_page }}" rel="next" class="next" title="按右方向键→或K键进入后一页">后一页 >></a>
-
-  {% endif %}
-	   </div>
-   </nav>
-   
+	<div class="paginator-list">{% if paginator.previous_page %}{% if paginator.page == 2 %}
+		<a href="/" rel="prev" title="按左方向键←或J键进入前一页"> << 前一页</a>{% else %}<a href="/page{{ paginator.previous_page }}" rel="prev" class="prev" title="按左方向键←或J键进入前一页"> << 前一页</a>
+   {% endif %}{% endif %}{% if paginator.next_page %}<a href="/page{{ paginator.next_page }}" rel="next" class="next" title="按右方向键→或K键进入后一页">后一页 >></a>{% endif %}
+	</div>
+   </nav>   
 </article>
 
 <script type="text/javascript">
