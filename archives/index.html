@@ -12,7 +12,7 @@ perScreen:        40
   <div id="cse" style="width: 50%;">加载搜索引擎...</div>
       
   		<ul class="posts">{% for post in site.posts limit:page.perScreen  %}{% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-		{% if year != y %}{% assign year = y %}<h2 class="listing-seperator-year">{{ y }}年</h2>{% endif %}<li class="listing-item"><span>{{ post.date | date:"%Y-%m-%d" }}</span><a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>{% endfor %}
+		{% if year != y %}{% assign year = y %}<li class="listing-seperator-year">{{ y }}年</li>{% endif %}<li class="listing-item"><span>{{ post.date | date:"%Y-%m-%d" }}</span><a href="{{site.baseurl}}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>{% endfor %}
 		</ul>	
 
 <div class="navigation">

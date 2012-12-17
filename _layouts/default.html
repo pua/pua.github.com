@@ -117,7 +117,7 @@
 </script>
 {% if page.title == "文章列表" %}
 <script src="/js/jquery.infinitescroll.min.js" type="text/javascript" charset="utf-8"></script>  
-<script type="text/javascript" charset="utf-8">  
+<script type="text/javascript">  
   // Infinite Scroll jQuery+Wordpress plugin
   $('#post-list').infinitescroll({
     debug           : false,
@@ -127,7 +127,7 @@
     itemSelector    : "#post-list ul.posts"
     }, function(){
 		var tempStr="";
-		$('h2.listing-seperator-year').each(function(){
+		$('li.listing-seperator-year').each(function(){
 			var thisStr = $(this).text();
 			if (tempStr != thisStr ) 
 				tempStr = thisStr;
