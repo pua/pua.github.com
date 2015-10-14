@@ -1,12 +1,5 @@
 PUA主页
 
-Global setup:
-
-Set up git
-
-	git config --global user.name "PUA"
-	git config --global user.email mars00755@163.com
-    
 
 Next steps:
 
